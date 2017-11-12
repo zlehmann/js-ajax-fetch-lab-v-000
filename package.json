@@ -2,10 +2,6 @@
   "name": "javascript-fetch-lab",
   "version": "0.1.0",
   "description": "Try out fetch() skills on Learn",
-  "engines": {
-    "node": "6.x",
-    "npm": "3.x"
-  },
   "main": "index.js",
   "scripts": {
     "debug-ide": "./bin/debug-ide",
