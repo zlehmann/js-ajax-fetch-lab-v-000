@@ -128,12 +128,12 @@ you commit and push, make sure you set `return ''` in the `getToken` function.
 NEVER give out your token or check it into GitHub!
 
 1.  Fork [this][fetchlab] repository in the `forkRepo` function. Display the
-    JSON result in the `results` div by calling `showForkedRepo`. Read more about
+    JSON result in the `results` div by calling `showResults`. Read more about
     forking in the [GitHub Forks API documentation][forks]. **_You should only be
     raising issues on your forked copy of the repository — not on the repo owned by
     learn-co-curriculum_**.
 
-2.  In `showForkedRepo`, display the repo information in the browser by
+2.  In `showResults`, display the repo information in the browser by
     appending html with a link to the repository url to the DOM.
 
 3.  Navigate to your forked repository (using the link in your html!) and enable
