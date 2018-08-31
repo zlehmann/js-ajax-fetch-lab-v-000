@@ -9,10 +9,6 @@ In this lab, you'll use `fetch()` to get remote data from and write data to GitH
 We're going to use `fetch` to get data from GitHub, fork a repository, and post
 issues to our forked repository.
 
-Using `fetch` to get remote data after using `XMLHttpRequest` is a little like
-riding in a convertible with the top down after spending your whole life walking
-like a sucker.
-
 Getting data from the GitHub API with `fetch` is super simple. If we're just
 trying to `GET` some JSON, we can do this:
 
