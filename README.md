@@ -2,15 +2,12 @@
 
 ## Overview
 
-In this lab, you'll use `fetch()` to get remote data from and write data to GitHub.
-
 ## Introduction
 
-We're going to use `fetch` to get data from GitHub, fork a repository, and post
-issues to our forked repository.
+In this lab, we're going to use `fetch()` to get remote data from GitHub, fork a
+repository, and post issues to our forked repository.
 
-Getting data from the GitHub API with `fetch` is super simple. If we're just
-trying to `GET` some JSON, we can do this:
+To `GET` data from the GitHub API with `fetch`, we pass the URL to `fetch`:
 
 ```js
 fetch('https://api.github.com/repos/jquery/jquery/commits')
@@ -18,9 +15,9 @@ fetch('https://api.github.com/repos/jquery/jquery/commits')
   .then(json => console.log(json));
 ```
 
-Keeping in mind that we can use the `json` method of the `Body` mixin to render
-our response as JSON, and that each `then` passes its return value to the next
-`then` as an argument.
+Keep in mind that we can use the `json` method of the [`Body` mixin][mixin] to
+render our response as JSON, and that each `then` passes its return value to the
+next `then` as an argument.
 
 ## Authentication Token
 
@@ -111,17 +108,17 @@ else. Always read the docs!
 ## Instructions
 
 We're going to be making an app to allow us to fork a repo and create issues on
-that fork. The basic HTML and JavaScript are provided in `index.html` and
+that fork. Basic HTML is provided in `index.html` along with some JavaScript in
 `index.js`. Your job will be to follow the instructions and complete the code to
 make it work. Don't forget to run it in the browser to see it in action, and run
 the tests to make sure they pass!
 
 You'll need to read the GitHub API documentation to see how each function works.
 
-**_Note_**: Running it will require that you return your personal token in `getToken()`,
-however, the tests will **not** pass if you leave your token there, so before
-you commit and push, make sure you set `return ''` in the `getToken` function.
-NEVER give out your token or check it into GitHub!
+**_Note_**: Running it will require that you return your personal token in
+`getToken`, however, the tests will **not** pass if you leave your token
+there, so before you commit and push, make sure you set `return ''` in the
+`getToken` function. NEVER give out your token or check it into GitHub!
 
 1.  Fork [this][fetchlab] repository in the `forkRepo` function. Display the
     JSON result in the `results` div by calling `showResults`. Read more about
@@ -130,7 +127,7 @@ NEVER give out your token or check it into GitHub!
     learn-co-curriculum_**.
 
 2.  In `showResults`, display the repo information in the browser by
-    appending html with a link to the repository url to the DOM.
+    appending html with a link to the repository URL to the DOM.
 
 3.  Navigate to your forked repository (using the link in your html!) and enable
     Issues by clicking on the `Settings` tab and checking `Issues`. They will
@@ -151,8 +148,6 @@ NEVER give out your token or check it into GitHub!
 - [`fetch()`](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API)
 - [GitHub API](https://developer.github.com/v3/)
 
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/javascript-fetch-lab' title='JavaScript Fetch Lab'>Javascript Fetch Lab</a> on Learn.co and start learning to code for free.</p>
-
 [github oauth]: https://developer.github.com/v3/oauth_authorizations/
 [tokens]: https://github.com/settings/tokens
 [v3]: https://developer.github.com/v3/
@@ -160,3 +155,6 @@ NEVER give out your token or check it into GitHub!
 [forks]: https://developer.github.com/v3/repos/forks/
 [fetchlab]: https://github.com/learn-co-curriculum/javascript-fetch-lab
 [api]: https://developer.github.com/apps/building-integrations/setting-up-and-registering-oauth-apps/about-authorization-options-for-oauth-apps/#3-use-the-access-token-to-access-the-api
+[mixin]: https://developer.mozilla.org/en-US/docs/Web/API/Body
+
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/javascript-fetch-lab' title='JavaScript Fetch Lab'>Javascript Fetch Lab</a> on Learn.co and start learning to code for free.</p>
