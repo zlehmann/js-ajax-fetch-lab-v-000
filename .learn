@@ -1,6 +1,7 @@
 tags:
-  - javascript
+  - fetch
+  - async
+  - lab
 languages:
   - javascript
-resources:
-  - 1
+resources: 0
