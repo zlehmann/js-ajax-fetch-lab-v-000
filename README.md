@@ -120,14 +120,13 @@ You'll need to read the GitHub API documentation to see how each function works.
 there, so before you commit and push, make sure you set `return ''` in the
 `getToken` function. NEVER give out your token or check it into GitHub!
 
-1.  Fork [this][fetchlab] repository in the `forkRepo` function. Display the
-    JSON result in the `results` div by calling `showResults`. Read more about
-    forking in the [GitHub Forks API documentation][forks]. **_You should only be
-    raising issues on your forked copy of the repository — not on the repo owned by
-    learn-co-curriculum_**.
+1.  Fork [this][fetchlab] repository in the `forkRepo` function. Read more about
+    forking in the [GitHub Forks API documentation][forks]. If done correctly,
+    the response, once converted to JSON, should contain information about your
+    personal fork of the repo. Pass this JSON data into `showResults`.
 
-2.  In `showResults`, display the repo information in the browser by
-    appending html with a link to the repository URL to the DOM.
+2.  In `showResults`, write code to display a link to the forked repo url
+    (`json.html_url`). Append this link to the `results` div.
 
 3.  Navigate to your forked repository (using the link in your html!) and enable
     Issues by clicking on the `Settings` tab and checking `Issues`. They will
@@ -135,13 +134,16 @@ there, so before you commit and push, make sure you set `return ''` in the
     are disabled!
 
 4.  Create a new issue for your forked repository with the `createIssue`
-    function. Use the `title` and `body` values from the provided form. After the
-    issue is created, fetch and display a list of all issues associated with your
-    repository on the page. Append them to a div with an id of "issues". Read more
-    about creating issues via API calls in the  
+    function. Use the `title` and `body` inputs from the provided form as data for
+    your fetch request. Read more about creating issues via API calls in the
     [GitHub Issues API documentation][v3issues].
 
-5.  Load it up and watch it work!
+**_Make sure you are only raising issues on your forked copy of the repository — not on the repo owned by learn-co-curriculum_**.
+
+5.  After the issue is created, fetch and display a list of all issues associated
+    with your repository on the page. Append them to the `issues` div.
+
+6.  When everything is working, remove your GitHub token and run `learn`.
 
 ## Resources
 
