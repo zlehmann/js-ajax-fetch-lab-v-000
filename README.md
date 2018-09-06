@@ -155,8 +155,8 @@ there, so before you commit and push, make sure you set `return ''` in the
 [v3]: https://developer.github.com/v3/
 [v3issues]: https://developer.github.com/v3/issues/
 [forks]: https://developer.github.com/v3/repos/forks/
-[fetchlab]: https://github.com/learn-co-curriculum/javascript-fetch-lab
+[fetchlab]: https://github.com/learn-co-curriculum/js-ajax-fetch-lab
 [api]: https://developer.github.com/apps/building-integrations/setting-up-and-registering-oauth-apps/about-authorization-options-for-oauth-apps/#3-use-the-access-token-to-access-the-api
 [mixin]: https://developer.mozilla.org/en-US/docs/Web/API/Body
 
-<p data-visibility='hidden'>View <a href='https://learn.co/lessons/javascript-fetch-lab' title='JavaScript Fetch Lab'>Javascript Fetch Lab</a> on Learn.co and start learning to code for free.</p>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/js-ajax-fetch-lab' title='JavaScript Fetch Lab'>Javascript Fetch Lab</a> on Learn.co and start learning to code for free.</p>

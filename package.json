@@ -1,5 +1,5 @@
 {
-  "name": "javascript-fetch-lab",
+  "name": "js-ajax-fetch-lab",
   "version": "0.1.0",
   "description": "Try out fetch() skills on Learn",
   "main": "index.js",
