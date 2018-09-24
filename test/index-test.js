@@ -49,7 +49,7 @@ describe('index', () => {
       forkRepo();
       const url = fetchSpy.calls[0].arguments[0];
       expect(url).toMatch(
-        /api.github.com\/repos\/learn-co-curriculum\/js-ajax-fetch-lab/
+        /api.github.com\/repos\/learn-co-curriculum\/js-ajax-fetch-lab\/forks/
       );
       const opts = fetchSpy.calls[0].arguments[1];
       expect(opts.method).toMatch(/(post|POST)/);
