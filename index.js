@@ -28,6 +28,8 @@ function createIssue() {
   const repo = 'https://api.github.com/repos/zlehmann/js-ajax-fetch-lab/issues';
   fetch(repo, {
     method: "POST",
+    title: document.getElementById('title').value,
+    body: document.getElementById('body').value,
     headers: {
       Authorization: `token ${getToken()}`
     }
