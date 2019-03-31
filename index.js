@@ -13,7 +13,8 @@ function forkRepo() {
     }
   })
     .then(resp => resp.json())
-    .then(json => console.log(json));
+    .then(json => showResults(json));
+
 }
 
 function showResults(json) {
