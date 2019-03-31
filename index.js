@@ -7,7 +7,11 @@ function getToken() {
 function forkRepo() {
   const repo = 'https://github.com/zlehmann/js-ajax-fetch-lab';
   //use fetch to fork it!
-  fetch(repo)
+  fetch(repo, {
+    headers: {
+      Authorization: 'token ' + getToken();
+    }
+  })
     .then(resp => resp.json())
     .then(json => console.log(json));
 }
