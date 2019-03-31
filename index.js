@@ -8,7 +8,6 @@ function forkRepo() {
   const repo = 'https://api.github.com/repos/zlehmann/js-ajax-fetch-lab/forks';
   //use fetch to fork it!
   fetch(repo, {
-    method: 'POST',
     headers: {
       Authorization: `token 4b1060a58447a0c8bc1d52439d1faacb923cfaac`
     }
