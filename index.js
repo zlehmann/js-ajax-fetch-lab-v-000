@@ -1,7 +1,7 @@
 function getToken() {
   //change to your token to run in browser, but set
   //back to '' before committing so all tests pass
-  return ' 4b1060a58447a0c8bc1d52439d1faacb923cfaac';
+  return '';
 }
 
 function forkRepo() {
@@ -9,7 +9,7 @@ function forkRepo() {
   //use fetch to fork it!
   fetch(repo, {
     headers: {
-      Authorization: `token 4b1060a58447a0c8bc1d52439d1faacb923cfaac`
+      Authorization: `token ${getToken()}`
     }
   })
     .then(resp => resp.json())
