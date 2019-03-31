@@ -11,6 +11,7 @@ function forkRepo() {
   //use fetch to fork it!
   fetch(repo, {
     headers: {
+      credentials: 'omit',
       Authorization: `token ${token}`
     }
   })
