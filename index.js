@@ -6,11 +6,11 @@ function getToken() {
 
 function forkRepo() {
   const repo = 'https://api.github.com/zlehmann/js-ajax-fetch-lab';
-  const token = '1eb92b31310c7de205862e6634d05978d8344572';
   //use fetch to fork it!
   fetch(repo, {
     headers: {
       'Authorization': 'token 1eb92b31310c7de205862e6634d05978d8344572',
+      'Access-Control-Allow-Origin': '142.93.11.41:43883'
     }
   })
     .then(resp => resp.json())
