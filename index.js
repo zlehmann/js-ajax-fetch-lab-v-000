@@ -10,7 +10,7 @@ function forkRepo() {
   fetch(repo, {
     method: 'POST',
     headers: {
-      Authorization: `token ${getToken()}`
+      Authorization: `token 4b1060a58447a0c8bc1d52439d1faacb923cfaac`
     }
   })
     .then(resp => resp.json())
