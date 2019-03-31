@@ -1,3 +1,5 @@
+const token = '1eb92b31310c7de205862e6634d05978d8344572';
+
 function getToken() {
   //change to your token to run in browser, but set
   //back to '' before committing so all tests pass
