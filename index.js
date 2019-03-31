@@ -33,7 +33,7 @@ function createIssue() {
     }
   })
     .then(resp => resp.json())
-    .ten(json => console.log(json));
+    .then(json => console.log(json));
 }
 
 function getIssues() {
