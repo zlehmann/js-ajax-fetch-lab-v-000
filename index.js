@@ -1,18 +1,16 @@
 function getToken() {
   //change to your token to run in browser, but set
   //back to '' before committing so all tests pass
-  return '2b7c616d68bf1b497827c7b46832f8804b8609a7';
+  return ' 4b1060a58447a0c8bc1d52439d1faacb923cfaac';
 }
 
 function forkRepo() {
   const repo = 'https://api.github.com/repos/zlehmann/js-ajax-fetch-lab/forks';
-  const token = getToken();
-  console.log(token);
   //use fetch to fork it!
   fetch(repo, {
     method: 'POST',
     headers: {
-      Authorization: `token 2b7c616d68bf1b497827c7b46832f8804b8609a7`
+      Authorization: `token ${getToken()}`
     }
   })
     .then(resp => resp.json())
