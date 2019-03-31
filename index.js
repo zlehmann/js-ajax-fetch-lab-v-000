@@ -10,7 +10,7 @@ function forkRepo() {
   fetch(repo, {
     headers: {
       'Authorization': 'token 1eb92b31310c7de205862e6634d05978d8344572',
-      'Access-Control-Allow-Origin': '142.93.11.41:43883'
+      'Access-Control-Allow-Origin': 'http://142.93.11.41:43883'
     }
   })
     .then(resp => resp.json())
